@@ -74,7 +74,7 @@ Core fields per example include title, congress, bill_type, bill_text/summary, p
 
 ## Safety and ethical notes
 
-This repository demonstrates and measures subtle deception capabilities of LLMs for scientific study and red-teaming; it does not introduce novel adversarial training and uses off-the-shelf LLMs.  Exercise caution when applying or extending this code to high-stakes domains and ensure alignment with legal/ethical guidelines.[1]
+This repository demonstrates and measures subtle deception capabilities of LLMs for scientific study and red-teaming; it does not introduce novel adversarial training and uses off-the-shelf LLMs.  Exercise caution when applying or extending this code to high-stakes domains and ensure alignment with legal/ethical guidelines.
 
 ## Known limitations
 
