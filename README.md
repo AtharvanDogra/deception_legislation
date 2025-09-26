@@ -93,4 +93,4 @@ This repository demonstrates and measures subtle deception capabilities of LLMs 
 
 ## Acknowledgments
 
-Partially supported by compute credits from OpenAI, detailed in the paper; thanks to human evaluators and prior datasets used to build LobbyLens. This uses the open-source [guidance framework](https://github.com/guidance-ai/guidance) for their simpler inference structures.
+Partially supported by compute credits from OpenAI, detailed in the paper; thanks to human evaluators and prior datasets used to build LobbyLens. This code uses the open-source [guidance framework](https://github.com/guidance-ai/guidance) for their simpler inference structures.
