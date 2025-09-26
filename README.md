@@ -1,4 +1,4 @@
-# Language Models can Subtly Deceive Without Lying: Code and Data
+# Language Models can Subtly Deceive Without Lying (ACL'25): Code and Data
 
 [Space reserved for main Figure 1 from the paper: insert image here once available][1]
 
