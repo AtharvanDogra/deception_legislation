@@ -2,10 +2,9 @@
 
 <img width="1786" height="741" alt="main" src="https://github.com/user-attachments/assets/0e7d15c7-663c-4b4f-ade0-4c6a5e0a12dc" />
 
-This repository hosts code and data utilities for the ACL 2025 long paper “Language Models can Subtly Deceive Without Lying: A Case Study on Strategic Phrasing in Legislation,” including scripts to reproduce the Lobbyist–Critic simulation, re-planning/resampling optimization, evaluation pipelines, and the LobbyLens dataset.
+This repository hosts code and data utilities for the ACL 2025 long paper “[Language Models can Subtly Deceive Without Lying: A Case Study on Strategic Phrasing in Legislation](https://aclanthology.org/2025.acl-long.1600/),” including scripts to reproduce the Lobbyist–Critic simulation, re-planning/resampling optimization, evaluation pipelines, and the LobbyLens dataset.
 
 ### Quick links
-- Paper (ACL Anthology): https://aclanthology.org/2025.acl-long.1600/
 - Dataset (Hugging Face): https://huggingface.co/datasets/atharvan/LobbyLens
 
 ### Citation
