@@ -88,8 +88,8 @@ This repository demonstrates and measures subtle deception capabilities of LLMs 
 
 ## License
 
-- Code: specify your preferred open-source license (e.g., MIT/Apache-2.0).[1]
-- Data: follows original sources’ terms; bill summaries CC0-1.0 via US government sources; company descriptions from SEC filings; see paper for details.[1]
+- Code: GNU General Public License v3.0,
+- Data: follows original sources’ terms; bill summaries CC0-1.0 via US government sources; company descriptions from SEC filings; see paper for details.
 
 ## Acknowledgments
 
