@@ -58,8 +58,6 @@ This project studies subtle deception by LLMs via strategic phrasing that preser
 - simulator.py: main script to run simulations
 - stronger_critic.py: simpler critic evaluation script. We used it to evaluate previous simulations against stronger critic.
 
-Note: file paths above are indicative; adjust to actual repository layout.[1]
-
 ## Models Used
 Supports open-source llama.cpp version of chat LLMs used in the paper (e.g., Mistral 7B Instruct, Mixtral 8×7B, Yi 34B, Qwen 7B/14B/72B), plus API-backed models if configured.
 
