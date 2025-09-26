@@ -46,7 +46,7 @@ This project studies subtle deception by LLMs via strategic phrasing that preser
 
 ### Artifact contributions
 - LobbyLens: a grounded dataset linking 936 bills to 4–12 relevant public companies each (4,439 bill–company pairs) with metadata.
-- A simple, reproducible Lobbyist–Critic framework with pairwise company comparisons and Bradley–Terry–Luce spectral ranking for identification.
+- A simple, reproducible Lobbyist–Critic framework.
 
 ## Repository structure
 
