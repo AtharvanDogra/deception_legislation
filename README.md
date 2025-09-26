@@ -63,7 +63,7 @@ Supports open-source llama.cpp version of chat LLMs used in the paper (e.g., Mis
 
 ## LobbyLens Dataset
 
-LobbyLens links US congressional bills (108th–118th) with potentially affected public companies via embedding-based similarity (BGE-Large-en/FlagEmbedding), filtering to ensure ≥4 candidates per bill and summaries ≤600 tokens for context feasibility.  Final set: 936 bills × 4–12 companies = 4,439 bill–company pairs, with metadata fields such as title, congress, bill type, summary, policy area, state, company name/ticker, and 10-K business description.[1]
+LobbyLens links US congressional bills (108th–118th) with potentially affected public companies via embedding-based similarity (BGE-Large-en/FlagEmbedding), filtering to ensure ≥4 candidates per bill and summaries ≤600 tokens for context feasibility.  Final set: 936 bills × 4–12 companies = 4,439 bill–company pairs, with metadata fields such as title, congress, bill type, summary, policy area, state, company name/ticker, and 10-K business description.
 
 - Component Attribution: Bills from govinfo.gov (CC0-1.0) via prior HF datasets; company descriptions from SEC 10-K with references as in paper.
 
