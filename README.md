@@ -1,6 +1,6 @@
 # Language Models can Subtly Deceive Without Lying (ACL'25): Code and Data
 
-[Space reserved for main Figure 1 from the paper: insert image here once available][1]
+<img width="1786" height="741" alt="main" src="https://github.com/user-attachments/assets/0e7d15c7-663c-4b4f-ade0-4c6a5e0a12dc" />
 
 This repository hosts code and data utilities for the ACL 2025 long paper “Language Models can Subtly Deceive Without Lying: A Case Study on Strategic Phrasing in Legislation,” including scripts to reproduce the Lobbyist–Critic simulation, re-planning/resampling optimization, evaluation pipelines, and the LobbyLens dataset.
 
@@ -42,24 +42,26 @@ Please cite the ACL 2025 paper if this code or dataset is used in research.
 
 This project studies subtle deception by LLMs via strategic phrasing that preserves technical truth while obscuring self-serving intent in a legislative testbed.  A “Lobbyist” agent drafts amendments to real US congressional bills to covertly benefit a specific company, while a “Critic” agent tries to identify the hidden benefactor from candidate companies matched to the bill.  The method includes iterative re-planning and re-sampling, which increases deception success (reducing correct identifications by up to ~40 percentage points across models) while largely retaining intended benefits.
 
+<img width="8000" height="1800" alt="parameters" src="https://github.com/user-attachments/assets/feec4f43-4ce5-4f24-b09a-59e91359c425" />
+
+
 ### Artifact contributions
 - LobbyLens: a grounded dataset linking 936 bills to 4–12 relevant public companies each (4,439 bill–company pairs) with metadata.
 - A simple, reproducible Lobbyist–Critic framework with pairwise company comparisons and Bradley–Terry–Luce spectral ranking for identification.
 
 ## Repository structure
 
-- src/data: dataset readers, filters, and utilities for LobbyLens (HF hub: atharvan/LobbyLens).[1]
-- src/sim: simulation entrypoints for Lobbyist, Critic, and iterative re-planning/resampling.[1]
-- src/eval: evaluation scripts for identification rate, benefit capture, ablations, and human-study packaging.[1]
-- src/models: model wrappers for supported chat LLMs and constrained decoding hooks.[1]
-- configs/: YAMLs for model families, decoding, trial counts, and dataset slices.[1]
-- scripts/: end-to-end runs, figures/tables replication, and robustness tests.[1]
-- notebooks/: exploratory analyses and sanity checks for rankings/thresholds.[1]
+- memory: Sample simulation outputs from Qwen 72B Model. Also, use as a reference for results_notebook.ipynb for main results calculation.
+- models: contains basic agent classes, some model classes for llama.cpp models, and other utilities.
+- utility_capture: contains results, code to calculate, and notebook to collate results.
+- results_notebook.ipynb: sample results calcualtion
+- simulator.py: main script to run simulations
+- stronger_critic.py: simpler critic evaluation script. We used it to evaluate previous simulations against stronger critic.
 
 Note: file paths above are indicative; adjust to actual repository layout.[1]
 
 ## Models Used
-Supports open-source chat LLMs used in the paper (e.g., Mistral 7B Instruct, Mixtral 8×7B, Yi 34B, Qwen 7B/14B/72B), plus API-backed models if configured.
+Supports open-source llama.cpp version of chat LLMs used in the paper (e.g., Mistral 7B Instruct, Mixtral 8×7B, Yi 34B, Qwen 7B/14B/72B), plus API-backed models if configured.
 
 
 ## LobbyLens Dataset
@@ -83,16 +85,6 @@ This repository demonstrates and measures subtle deception capabilities of LLMs 
 - Legislative process abstractions; real-world trade-offs are more complex.
 - Strongest critics partly API-based due to compute/cost; broader frontier-model coverage is future work.
 
-## Example script snippets
-
-- Run a full simulation sweep:
-  - bash scripts/run_simulation.sh --model qwen-14b --trials 3 --dataset hf:atharvan/LobbyLens --output runs/q14b_t3.jsonl[1]
-- Evaluate identification (top-1):
-  - bash scripts/eval_identification.sh --inputs runs/q14b_t3.jsonl --threshold top1 --bootstrap 10000[1]
-- Evaluate benefit capture:
-  - bash scripts/eval_benefit_capture.sh --inputs runs/q14b_t3.jsonl --evaluator qwen-72b --constrained yes[1]
-
-Adjust flags to match local filenames and configs.[1]
 
 ## License
 
@@ -101,4 +93,4 @@ Adjust flags to match local filenames and configs.[1]
 
 ## Acknowledgments
 
-Partially supported by compute credits from OpenAI, detailed in the paper; thanks to human evaluators and prior datasets used to build LobbyLens.
+Partially supported by compute credits from OpenAI, detailed in the paper; thanks to human evaluators and prior datasets used to build LobbyLens. This uses the open-source [guidance framework](https://github.com/guidance-ai/guidance) for their simpler inference structures.
